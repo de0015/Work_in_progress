@@ -1,0 +1,27 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+```
+```{r}
+# Load in the Data
+Aquifer_Auser <- read.csv("~/Desktop/Kaggle Data/Aquifer_Auser.csv") # Description: This waterbody consists of two subsystems, called NORTH and SOUTH, where the former partly influences the behavior of the latter. Indeed, the north subsystem is a water table (or unconfined) aquifer while the south subsystem is an artesian (or confined) groundwater.
+
+#The levels of the NORTH sector are represented by the values of the SAL, PAG, CoS and DIEC wells, while the levels of the SOUTH sector by the LT2 well.
+
+Aquifer_Doganella <- read.csv("~/Desktop/Kaggle Data/Aquifer_Doganella.csv") 
+Aquifer_Luco <- read.csv("~/Desktop/Kaggle Data/Aquifer_Luco.csv") 
+Aquifer_Petrignano <- read.csv("~/Desktop/Kaggle Data/Aquifer_Petrignano.csv")
+Lake_Bilancino <- read.csv("~/Desktop/Kaggle Data/Lake_Bilancino.csv")
+Spring_Amiata <- read.csv("~/Desktop/Kaggle Data/Water_Spring_Amiata.csv")
+Spring_Lupa <- read.csv("~/Desktop/Kaggle Data/Water_Spring_Lupa.csv")
+Spring_Madonna <- read.csv("~/Desktop/Kaggle Data/Water_Spring_Madonna_di_Canneto.csv")
+
+# Break out by sub divisions
+Doganella_north <- 
+```
